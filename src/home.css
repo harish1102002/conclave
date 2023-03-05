@@ -200,11 +200,8 @@ body{
     .chatbox{
         justify-content: space-around;
     }
-    .chat,.chatme{
-        height: 78px;
-    }
     .chatme{
-        margin-left: 40%;
+        margin-left: 43%;
     }
     .typing{
         margin-right: 2px;
