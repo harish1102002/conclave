@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 let post=[]
 function Login() {
     const [userid,setud]=useState("");
-    fetch("https://conclave.onrender.com/").then(
+    fetch("http://localhost:8000/").then(
                 (res) => res.json()
             ).then((j)=>
                 {post=j})

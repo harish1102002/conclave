@@ -2,7 +2,7 @@ import "./home.css";
 import io from "socket.io-client";
 import {useEffect, useState, useRef} from "react";
 
-const soc=io.connect("https://conclave.onrender.com/");
+const soc=io.connect("http://localhost:8000/");
 function Home(props)
 {
     let uni=[]
@@ -78,6 +78,7 @@ function Home(props)
         
     },[post])
     useEffect(()=>scr(),[inchat])
+
     useEffect(()=>{
     soc.on("receive",(e)=>{
         if(e.rec==props.Id)
@@ -127,7 +128,7 @@ function Home(props)
                     <div id="messages" className="messages">
                     {
                         inchat.map((e)=>
-                        <div className="chat">
+                        <div className={"chat"+((e.send==props.Id)?"me":"")}>
                         <p className="sender">{e.send}</p>
                         <p className="msg">{e.msg}</p>
                         <p className="date">{e.time}</p>
