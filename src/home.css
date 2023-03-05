@@ -197,13 +197,13 @@ body{
         justify-content: space-around;
     }
     .chat,.chatme{
-        height: 90px;
+        height: 70px;
     }
     .chatme{
         margin-left: 35%;
     }
     .msg{
-        margin-top: -10px;
-        margin-bottom: -10px;
+        margin-top: -12px;
+        margin-bottom: -12px;
     }
 }
