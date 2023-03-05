@@ -61,8 +61,7 @@ body{
     font-size: 15px;
     display: flex;
     align-items: center;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     font-weight: bolder;
     width: 20px;
     height: 20px;
