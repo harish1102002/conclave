@@ -10,6 +10,7 @@ function Home(props)
     const chats= new Map()
     const [inchat,seti]=useState([])
     const r=useRef(0)
+    const [n,setn]=useState("none")
     const pr=useRef(post)
     function scr(){document.getElementById("messages").scrollTop=document.getElementById("messages").scrollHeight;}
     
@@ -72,7 +73,7 @@ function Home(props)
         if(r.current==e.send)
         seti(y)
         else
-        document.getElementById(e.send).style.display="inline";
+        setn("inline");
         
     },[post])
     useEffect(()=>scr(),[inchat])
@@ -117,7 +118,7 @@ function Home(props)
                     uni.map((v)=>
                         <div className="mainchat" onClick={()=>chatclick(v)}>
                             <p>{v}</p>
-                            <p className={"alert "+v} id={v}>n</p>
+                            <p className={"alert "+v} id={v} style={{display:n}}>n</p>
                         </div>
                     )
                 }
