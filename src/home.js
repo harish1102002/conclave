@@ -73,7 +73,7 @@ function Home(props)
         if(r.current==e.send)
         seti(y)
         else
-        setn("inline");
+        setn("block");
         
     },[post])
     useEffect(()=>scr(),[inchat])
