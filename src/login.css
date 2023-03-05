@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.background
+{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-color: #272727;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.login{
+    display:flex;
+    backdrop-filter: blur(10px);
+    margin-top: 22vh;
+    min-height: 400px;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    overflow: hidden;
+    color: wheat;
+    height: 55vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #172b35;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+::placeholder{
+    color: wheat;
+    opacity: 0.5;
+}
+
+input{
+text-align: center;
+min-height: 25px;
+font-weight: bold;
+color: whitesmoke;
+font-family: 'Poppins', sans-serif;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid white;
+}
+.user{
+    width: 270px;
+    height: 4vh;
+    border: none;
+    border-bottom: 2px solid wheat;
+    font-size: 18px;
+    justify-items: center;
+    background-color: transparent;
+}
+
+.password{
+    width: 270px;
+    height: 4vh;
+    margin-top: 4vh;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid wheat;
+    background-color: transparent;
+}
+
+.retype{
+    width: 270px;
+    height: 4vh;
+    margin-top: 4vh;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid wheat;
+    background-color: transparent;
+    display: none;
+
+}
+
+.userincorrect{
+color: brown;
+display: none;
+font-weight: bold;
+}
+
+.passwordincorrect{
+    color: brown;
+    display: none;
+    font-weight: bold;
+}
+ 
+.retypeincorrect{
+    color: brown;
+    display: none;
+    font-weight: bold;
+    }
+
+.submit{
+    width: 140px;
+    height: 4vh;
+    min-height: 25px;
+    margin-top: 3.5vh;
+    border: none;
+    color: #263238;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: wheat;
+}
+
+.newacc{
+    height: 4vh;
+    margin-top: 4vh;
+    min-height: 25px;
+    border: none;
+    font-weight: bolder;
+    color: wheat;
+    background-color: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
