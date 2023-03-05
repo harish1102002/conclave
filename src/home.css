@@ -123,7 +123,7 @@ body{
 }
 .msg{
     overflow-wrap: break-word;
-    margin-left: 10px;
+    margin-left: 9px;
     color:white;
 }
 .sender{
@@ -144,7 +144,9 @@ body{
     height: auto;
     border-radius: 10px 0;
     padding: 0 10px;
-    margin: 2% 5% 5% 5%;
+    box-sizing: border-box;
+    margin: 2%;
+    margin-bottom: 4%;
 }
 .chatme{
     margin-left:46%;
@@ -197,10 +199,10 @@ body{
         justify-content: space-around;
     }
     .chat,.chatme{
-        height: 75px;
+        height: 76px;
     }
     .chatme{
-        margin-left: 35%;
+        margin-left: 40%;
     }
     .msg{
         margin-top: -12px;
