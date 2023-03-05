@@ -8,13 +8,13 @@ body{
 }
 
 .home{
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
 }
 .chats{
-    width: 100vw;
-    height: calc(100vh - max(10vh,70px));
+    width: 100%;
+    height: calc(100% - max(10vh,70px));
     display: flex;
     background-color: #13171a;
 }
@@ -108,12 +108,12 @@ body{
     background-color: #111b21;
 }
 .messages{
-    height: calc(100% -  max(8vh,65px));
+    height: calc(100% -  max(8.3vh,68px));
     overflow-y: scroll;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
 }
 .nav{
-    background-color: #11232c;
+    background-color: #16252d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,7 +153,7 @@ body{
 }
 .typing{
     width: 50vw;
-    height: max(7.4vh,50px);
+    height: max(7vh,50px);
     font-size: medium;
     border: none;
     color: white;
@@ -171,8 +171,8 @@ body{
     border: none;
 }
 .send{
-    height: max(7.4vh,50px);
-    width:  max(7.4vh,50px);
+    height: max(7vh,50px);
+    width:  max(7vh,50px);
     border-radius: 50%;
     border: none;
     font-size: 18px;
