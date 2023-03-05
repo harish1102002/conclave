@@ -19,7 +19,7 @@
     width: min(600px,90%);
     overflow-x: hidden;
     color: wheat;
-    height: max(55vh,min(400px,70vh));
+    height: max(55vh,min(350px,70vh));
     font-family: 'Poppins', sans-serif;
     background-color: #122129;
     background-size: cover;

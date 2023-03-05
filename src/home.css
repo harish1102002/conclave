@@ -113,7 +113,7 @@ body{
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
 }
 .nav{
-    background-color: #16252d;
+    background-color: #15262f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,11 +181,16 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:500px){
     .login{
         width: 95vw;
+    }
+    .chats{
+        height: 85vh;
+        overflow-y: scroll;
     }
     .chatbox{
         justify-content: space-around;
     }
+
 }
