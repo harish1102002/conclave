@@ -186,7 +186,7 @@ body{
         width: 95vw;
     }
     .chats{
-        height: 85vh;
+        height: 80vh;
         overflow-y: scroll;
     }
     .chatbox{
