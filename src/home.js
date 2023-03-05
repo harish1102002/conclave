@@ -67,15 +67,12 @@ function Home(props)
         pr.current=post
         let e=post[post.length-1]
         if(e.send==props.Id)
-        {
            return
-        }
         let y=chats.get(e.send).slice()
         if(r.current==e.send)
         seti(y)
-        else if(props.Id!=e.send)
+        else
         document.getElementById(e.send).style.display="inline";
-        console.log(props.Id+" "+e.send)
         
     },[post])
     useEffect(()=>scr(),[inchat])
