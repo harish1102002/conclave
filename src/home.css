@@ -197,7 +197,7 @@ body{
         justify-content: space-around;
     }
     .chat,.chatme{
-        height: 70px;
+        height: 75px;
     }
     .chatme{
         margin-left: 35%;
