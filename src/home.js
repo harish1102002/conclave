@@ -73,7 +73,7 @@ function Home(props)
         let y=chats.get(e.send).slice()
         if(r.current==e.send)
         seti(y)
-        else
+        else if(props.Id!=e.send)
         document.getElementById(e.send).style.display="inline";
         
     },[post])
