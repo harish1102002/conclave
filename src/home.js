@@ -75,6 +75,7 @@ function Home(props)
         seti(y)
         else if(props.Id!=e.send)
         document.getElementById(e.send).style.display="inline";
+        console.log(props.Id+" "+e.send)
         
     },[post])
     useEffect(()=>scr(),[inchat])
