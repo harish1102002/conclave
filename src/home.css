@@ -3,16 +3,18 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .home{
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     height: 100vh;
 }
 .chats{
-    width: 100%;
-    height: 90vh;
+    width: 100vw;
+    height: calc(100vh - max(10vh,70px));
     display: flex;
     background-color: #13171a;
 }
@@ -22,16 +24,20 @@ body{
     font-size: 25px;
 }
 .newchat{
-    margin-top: 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: #161b1e;
     color: wheat;
+    width: 100%;
+    top: 6px;
+    margin-bottom: 16px;
     height: 15vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid wheat;
+    min-height: 100px;
+    position: sticky;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+    border-left: 1.5px solid wheat;
 }
 .newrec{
     width: 60%;
@@ -57,6 +63,7 @@ body{
     font-weight: bolder;
     width: 20px;
     height: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     background-color: #ca9670;
     color: rgb(35, 12, 62);
 }
@@ -72,43 +79,46 @@ body{
     background-color: wheat;
 }
 .mainchat{
-    margin-top: 6px;
+    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #161b1e;
     color: wheat;
     height: 10vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid wheat;
+    min-height: 60px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+    border-left: 1.5px solid wheat;
 }
 .chatlog{
     width: 30%;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
-    background-color: #151e22;
+    background-color: #152024;
+    position: relative;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
     border-right: 1px solid wheat;
 }
 .inchat{
     display: none;
     width: 70%;
-    height: 90vh;
+    height: 100%;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #111b21;
 }
 .messages{
-    height: 78vh;
+    height: calc(100% -  max(8vh,65px));
     overflow-y: scroll;
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
 }
 .nav{
     background-color: #11232c;
     display: flex;
-    min-height: 70px;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset;
+    height: max(10vh,70px);
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 1) inset;
 }
 .msg{
     overflow-wrap: break-word;
@@ -137,20 +147,19 @@ body{
 }
 .chatbox{
     display: flex;
-    height: 8vh;
+    height: max(8vh,65px);
     justify-content: center;
+    align-items: center;
 }
 .typing{
     width: 50vw;
-    height: 8vh;
-    min-height: 50px;
+    height: max(7.4vh,50px);
     font-size: medium;
     border: none;
     color: white;
     background-color: #172b35;
     border-radius: 20px;
     margin-right: 10px;
-    margin-top:2vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .typing::placeholder{
@@ -162,26 +171,19 @@ body{
     border: none;
 }
 .send{
-    height: 8vh;
-    margin-top: 2vh;
-    width: 8vh;
-    min-width: 50px;
-    min-height: 50px;
+    height: max(7.4vh,50px);
+    width:  max(7.4vh,50px);
     border-radius: 50%;
     border: none;
     font-size: 18px;
     color: wheat;
     background-color: #172b35;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
 }
 
 @media only screen and (max-width:420px){
     .login{
         width: 95vw;
-    }
-    .chats{
-        height: 69vh;
     }
     .chatbox{
         justify-content: space-around;

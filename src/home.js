@@ -2,7 +2,7 @@ import "./home.css";
 import io from "socket.io-client";
 import {useEffect, useState, useRef} from "react";
 
-const soc=io.connect("http://localhost:8000");
+const soc=io.connect("https://conclave.onrender.com");
 function Home(props)
 {
     let uni=[]

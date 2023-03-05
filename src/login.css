@@ -5,24 +5,21 @@
     width: 100vw;
     height:100vh;
     display: flex;
-    margin-top: -8px;
-    margin-left: -8px;
-    background-color: #272727;
+    margin: 0;
+    background-color: #252525;
     justify-content: center;
-    overflow-y: hidden;
+    overflow: hidden;
+    align-items: center;
 }
 
 .login{
     display:flex;
-    backdrop-filter: blur(10px);
-    margin-top: 22vh;
-    min-height: 400px;
     flex-direction: column;
     align-items: center;
-    width: 600px;
-    overflow: hidden;
+    width: min(600px,90%);
+    overflow-x: hidden;
     color: wheat;
-    height: 55vh;
+    height: max(55vh,min(400px,70vh));
     font-family: 'Poppins', sans-serif;
     background-color: #172b35;
     background-size: cover;
